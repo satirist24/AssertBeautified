@@ -1,6 +1,6 @@
-package satirist24.assertbeautified;
+package satirist24.assertbeautified.model;
 
-public interface Testable {
+public interface Testable<T> {
 
     /**
      * Executes implemented test

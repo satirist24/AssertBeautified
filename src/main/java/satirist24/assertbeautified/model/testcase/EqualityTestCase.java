@@ -1,11 +1,11 @@
-package satirist24.assertbeautified;
+package satirist24.assertbeautified.model.testcase;
 
 import org.junit.Assert;
 
 /**
  * Created on 02.04.15.
  */
-public class EqualityTestCase<T> extends TestCase<EqualityTestCase, T> {
+public abstract class EqualityTestCase<T> extends TestCase<EqualityTestCase, T> {
     
     protected T expected;
     
@@ -27,8 +27,4 @@ public class EqualityTestCase<T> extends TestCase<EqualityTestCase, T> {
         
     }
 
-    @Override
-    public void test() {
-        Assert.assertEquals(errorMsg, expected, actual);
-    }
 }
